@@ -12,19 +12,19 @@ const Navbar = () => {
       {/* Navigation Links */}
       <div className="flex gap-6 text-gray-800 dark:text-white/80 text-sm">
         <a 
-          href="#services" 
+          href="#" 
           className="hover:text-gray-900 dark:hover:text-white transition-colors duration-300"
         >
-          Services
+          Home
         </a>
         <a 
-          href="#featured-work" 
+          href="#" 
           className="hover:text-gray-900 dark:hover:text-white transition-colors duration-300"
         >
-          Featured Work
+          About Us
         </a>
         <a 
-          href="#reviews" 
+          href="#" 
           className="hover:text-gray-900 dark:hover:text-white transition-colors duration-300"
         >
           Reviews
