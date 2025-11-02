@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@variant dark (&:is(.dark *));
+
+@theme {
+  --color-primary: #00b894;
+  --color-background-light: #f9f9f9;
+  --color-background-dark: #1a1a1a;
+  --color-text-primary-light: #2d3436;
+  --color-text-primary-dark: #e0e0e0;
+  --color-text-secondary-light: #636e72;
+  --color-text-secondary-dark: #9e9e9e;
+  --color-error: #d63031;
+
+
+}
+
+.font-title {
+  font-family: var(--font-rubik);
+}
+.font-body {
+  font-family: var(--font-montserrat);
+}
+
+body {
+  background-color: var(--color-background-light);
+  color: var(--color-text-primary-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body,
+html.dark body {
+  background-color: var(--color-background-dark);
+  color: var(--color-text-primary-dark);
+}
+
+
+
+.hero-text {
+  text-shadow: 
+    0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 40px rgba(255, 255, 255, 0.3),
+    0 0 60px rgba(255, 255, 255, 0.2);
+}
+
