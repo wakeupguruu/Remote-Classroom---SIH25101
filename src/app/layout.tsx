@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Montserrat, Rubik } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/app/components/ThemeProvider";
-import LenisProvider from "./components/LenisProvider";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import LenisProvider from "@/components/LenisProvider";
+import AuthProvider from "@/components/AuthProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,6 +43,7 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} ${rubik.variable} ${montserrat.variable} antialiased`}
       >
+        <AuthProvider>
         <ThemeProvider 
           attribute="class" 
           defaultTheme="dark" 
@@ -51,6 +53,7 @@ export default function RootLayout({
         >
            <LenisProvider>{children}</LenisProvider>
         </ThemeProvider>
+        </AuthProvider>
       </body>
     </html>
   );

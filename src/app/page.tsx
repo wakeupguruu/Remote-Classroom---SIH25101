@@ -44,13 +44,13 @@
 "use client"
 
 import { useLayoutEffect, useRef } from "react";
-import HeroSection from "./components/home/HeroSection";
+import HeroSection from "@/components/home/HeroSection";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import Navbar from "./components/home/Navbar";
-import VisionSection from "./components/home/VisionSection";
-import SplitCardScroll from "./components/home/SplitCardScroll";
-import FeatureGrid from "./components/home/FeatureGrid";
+import Navbar from "@/components/home/Navbar";
+import VisionSection from "@/components/home/VisionSection";
+import SplitCardScroll from "@/components/home/SplitCardScroll";
+import FeatureGrid from "@/components/home/FeatureGrid";
 
 gsap.registerPlugin(ScrollTrigger);
 
