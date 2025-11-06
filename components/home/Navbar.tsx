@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { ThemeToggle } from "@/app/components/ThemeToggle";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const Navbar = () => {
   return (
